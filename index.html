@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/emo_logo.png" width="30" height="20" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClientSense</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- fontawesome smiley cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+     <!-- Add loading animation in button icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+
+/* Set deep blue color for background */
+body {
+    background-color: #010a43;
+}
+
+/* Set soft pink color for headings */
+h1, h2, h3 {
+    color: #ffb6c1;
+}
+
+/* Set white color for text */
+p, label {
+    color: #FFFFFF;
+}
+
+/* Add a hover effect to links */
+a:hover {
+    color: #ffb6c1;
+}
+
+/* Add a background color for buttons */
+.btn {
+    background-color: #ffb6c1;
+    color: #010a43;
+}
+
+/* Add a hover effect for buttons */
+.btn:hover {
+    background-color: #010a43;
+    color: #ffb6c1;
+}
+
+/* rating display*/
+.gradient-number {
+  font-size: 50px;
+  font-weight: bold;
+  align-items: justify;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.smiley-padding{
+  padding:10px;
+}
+
+
+/*suggestions styling*/
+
+.suggestions-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #ccc;
+  text-align: left;
+}
+
+.suggestions-container h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.suggestions-container ul {
+  
+  margin: 0;
+  padding: 0;
+}
+
+.suggestions-container li {
+  list-style-type: square;
+  margin-bottom: 10px;
+  
+  color: black
+}
+
+/* sentiment summary styling */
+
+.sentiment-summary {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #ccc;
+  text-align: left;
+}
+
+.sentiment-summary h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.sentiment-score {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.sentiment-text {
+  font-size: 1.2em;
+  color: black;
+}
+
+@media screen and (max-width: 400px) {
+  .mobile-padding {
+    padding-top: 100px; /* 10px top and bottom padding */
+  }
+}
+
+.padding{
+  padding-top: 100px; 
+}
+  </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
